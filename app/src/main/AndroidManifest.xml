@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".choosebgact"></activity>
         <activity android:name=".GridItemActivity" />
         <activity android:name=".choosebgmain" />
         <activity android:name=".choosecard" />

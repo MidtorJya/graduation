@@ -6,10 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".GridItemActivity">
 
-
-
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
@@ -18,6 +14,7 @@
         android:layout_centerVertical="true"
         android:src="@drawable/b1"
         android:layout_marginTop="27dp"
-        android:layout_below="@+id/griddata"/>
+        />
 
 </RelativeLayout>
+

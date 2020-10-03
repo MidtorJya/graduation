@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">graduation</string>
     <string name="bg1">bg1</string>
+    <string name="congrat">congratulation</string>
+    <string name="ok">ok</string>
+    <string name="name">NAME</string>
+    <string name="year">YEAR</string>
 </resources>

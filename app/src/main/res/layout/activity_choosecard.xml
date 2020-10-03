@@ -6,18 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".choosecard">
 
-    <GridView
-        android:id="@+id/gridView"
+
+    <EditText
+        android:id="@+id/intname"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:elevation="5dp"
-        android:horizontalSpacing="4dp"
-        android:numColumns="2"
-        android:verticalSpacing="4dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:autofillHints=""
+        android:hint="@string/name"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/congrats2"
+        app:layout_constraintVertical_bias="0.176" />
+
+        <TextView
+            android:id="@+id/congrats2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/congrat"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <Button
+            android:id="@+id/btok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.922"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.953" />
+
+    <EditText
+        android:id="@+id/years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/year"
+
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intname"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
