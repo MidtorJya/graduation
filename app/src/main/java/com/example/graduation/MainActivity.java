@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                                           //establish a connection between choosebgmain activity and MainActivity.java using intent
-                                          Intent creatcard = new Intent(MainActivity.this, choosebgmain.class);
+                                          Intent creatcard = new Intent(MainActivity.this, choosebgact.class);
 
                                          //open the activity , creatcard.java
                                          startActivity(creatcard);

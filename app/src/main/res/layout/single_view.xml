@@ -20,6 +20,8 @@
         android:layout_marginLeft="30dp"
         android:layout_gravity="center"
         android:id="@+id/textView"
+        android:textSize="25dp"
+        android:textStyle="bold"
         />
 
 </LinearLayout>

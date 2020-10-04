@@ -9,6 +9,10 @@ import android.os.Bundle;
 public class choosebgact extends AppCompatActivity {
  private RecyclerView recyclerView;
  RecyclerView.LayoutManager layoutManager;
+ RecyclerViewAdapter  recyclerViewAdapter;
+
+ int []arr={R.drawable.b1,R.drawable.b2,R.drawable.b3,R.drawable.b4,R.drawable.b5,R.drawable.b6,};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,5 +21,10 @@ public class choosebgact extends AppCompatActivity {
         recyclerView=findViewById(R.id.recycleView);
         layoutManager=new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(layoutManager);
+        recyclerViewAdapter=new RecyclerViewAdapter(arr);
+
+        recyclerView.setAdapter(recyclerViewAdapter);
+        recyclerView.setHasFixedSize(true);
+
     }
 }
